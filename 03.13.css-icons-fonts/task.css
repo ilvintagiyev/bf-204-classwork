@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header .header .logo {
+    padding: 50px 300px;
+}
+
+nav ul {
+    margin-right: 200px;
+
+
+}
+
+nav ul li {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 15px 20px;
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-ser
+}
+
+
+#banner {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg");
+    height: 100vh;
+}
+
+#banner .container .banner {  
+    color: white;          
+    text-align: center;
+    padding: 200px 0 30px 0;
+    font-size: 50px;
+
+}
+
+hr {
+    width: 40px;
+    margin: 30px auto;
+    background-color: red;
+    border: 2px solid;
+
+}
+.banner button{
+    width: 250px;
+    height: 80px;
+    padding: 20px;
+    background-color:#ca5252;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+
+}
+.extra-info{
+    background-color: #f4623a;;
+    width: 200vh;
+    height: 200px;
+}
