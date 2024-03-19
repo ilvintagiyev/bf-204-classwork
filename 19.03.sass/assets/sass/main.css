@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header .header img {
+  width: 150px;
+  height: 60px;
+}
+header .header ul {
+  display: flex;
+  list-style: none;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+header .header ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
