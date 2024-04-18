@@ -1,6 +1,7 @@
 // import {BASE_URL} from "./app.js";
 
 import { BASE_URL } from "./app.js";
+import { deleteDataById } from "./services.js";
 
 // const lists = document.querySelector(".lists");
 // async function getData(ednpoint){
@@ -20,19 +21,19 @@ import { BASE_URL } from "./app.js";
 // }
 const tBody = document.querySelector(".tbody");
 
-async function getData(ednPoint){
-  try{
+async function getData(ednPoint) {
+  try {
     const response = await fetch(`${BASE_URL}/${ednPoint}`);
     const data = await response.json();
     drawTable(data);
-  }catch(error){}
+  } catch (error) { }
 }
 
 getData("suppliers");
 
 function drawTable(data) {
-    tBody.innerHTML = "";
-    data.forEach((element) =>{
+  tBody.innerHTML = "";
+  data.forEach((element) => {
     const trElem = document.createElement("tr");
 
     trElem.innerHTML = `            
@@ -43,7 +44,18 @@ function drawTable(data) {
     <td>${element.address.city}, ${element.address.country}</td>
     <td><a class="btn btn-primary" href="./details.html">Details</a></td>
     <td><a class="btn btn-success" href="">Edit</a></td>
-    <td><button class="btn btn-danger">Delete</button></td>`;
+    <td><button data-id=${element.id} class="btn btn-danger delete-btn">Delete</button></td>`;
     tBody.append(trElem);
+ 
+  })
+
+  const deleteBtns = document.querySelectorAll(".delete-btn")
+  deleteBtns.forEach((btn) =>{
+    btn.addEventListener("click", function(){
+      const id = this.getAttribute("data-id")
+      deleteDataById(id);
+      this.closest("tr").remove()
     })
+  })
+
 }
