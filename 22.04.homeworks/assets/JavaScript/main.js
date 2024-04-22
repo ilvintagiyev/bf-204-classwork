@@ -19,7 +19,7 @@ function renderCards(arr) {
     moviesWrapper.innerHTML = "";
     arr.forEach((movies) => {
         moviesWrapper.innerHTML += `
-    <div class="col-lg-3 col-md-6 col-sm-12 mb-5" data-id="${movies.id}">
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 card-wrapper" data-id="${movies.id}">
                 <div class="card">
                     <div class="card-image">
                         <img src="${movies.poster}" class="card-img-top" alt="${movies.title}">
