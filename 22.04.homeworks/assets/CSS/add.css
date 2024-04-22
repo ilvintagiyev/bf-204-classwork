@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.form{
+    width: 100%;
+    border: 2px solid black;
+}
+#form-sec h1{
+    color: #D7171E;
+    padding: 150px 0 50px;
+}
+#add-form{
+    border-radius: 50px;
+    border: 2px solid black;
+    padding: 50px;
+    width: 50%;
+}
+.submit-btn{
+    background-color: #D7171E;
+    color: black;
+}
