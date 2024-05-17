@@ -1,0 +1,31 @@
+nav {
+    background-color: #343a40;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+
+    h3 {
+        color: white;
+    }
+
+
+    ul {
+        display: flex;
+        gap: 20px;
+
+        .links {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+        }
+    }
+    .Tasty{
+        border: 2px solid white;
+        padding: 5px 7px 5px 7px;
+    }
+}

@@ -1,0 +1,21 @@
+.section1{
+    background-image:url("https://preview.colorlib.com/theme/tasty/images/bg_1.jpg");
+    height: 70vh;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h2{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 250px;
+        font-size: 50px;
+    }
+}
+.manpage{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+        background-image: url("https://preview.colorlib.com/theme/tasty/images/about-2.jpg.webp");
+}
